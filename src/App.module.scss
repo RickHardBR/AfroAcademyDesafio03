@@ -76,4 +76,19 @@
     }
     
   }
+  .empty{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $gray-500;
+
+    svg {
+      width: 4.5rem;
+      height: 4.5rem;
+    }
+    p {
+      font-weight: 500;
+      margin-top: 2rem;
+    }
+  }
 }
