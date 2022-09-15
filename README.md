@@ -12,7 +12,7 @@
       * [O Desafio](#desafio)
 
 
-<a href="./AfroAcademyDesafio03.rar">Baixar Aplicação compactada</a>
+<a type="file" href="https://github.com/RickHardBR/AfroAcademyDesafio03/blob/main/AfroAcademyDesafio03.rar">Baixar Aplicação compactada</a>
 
 <h2 align="center" style="color:#70ae6e" id="desafio"><b>O Desafio</b></h2>
 
