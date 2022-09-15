@@ -10,7 +10,7 @@ import { Task } from './components/Tasks/Task'
 export function App() {
   const [taskText, setTaskText] = useState('')
   const [tasks, setTasks] = useState(()=>{
-    const localTasks = localStorage.getItem('@AfroToDo: tasks')
+    const localTasks = localStorage.getItem('@AfroToDo:tasks')
 
     return JSON.parse(localTasks) || []
   })
@@ -27,10 +27,10 @@ export function App() {
       content: taskText,
       done: false
     }
+
     const newTasks = [...tasks, newTask]
-
-    localStorage.setItem('@AfroToDo:tasks', JSON.stringify(newTasks))
-
+    localStorage.setItem("@AfroToDo:tasks", JSON.stringify(newTasks))
+    
     setTasks(newTasks)
     setTaskText('')
   }
@@ -44,6 +44,7 @@ export function App() {
       return task.id === id ? { ...task, done: !task.done } : task
     })
 
+    localStorage.setItem('@AfroToDo:tasks', JSON.stringify(updatedTasks))
     setTasks(updatedTasks)
   }
 
@@ -52,6 +53,7 @@ export function App() {
       return task.id !== id
     })
 
+    localStorage.setItem('@AfroToDo:tasks', JSON.stringify(filterdTasks))
     setTasks(filterdTasks)
   }
 
