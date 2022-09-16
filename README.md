@@ -4,7 +4,7 @@
 ## 
 
  * [Indice](#funciona)
-      * [Link GitPages](index.html)
+      * [Link GitPages](https://rickhardbr.github.io/AfroAcademyToDo/)
       * [O Desafio](#desafio)
       * [Link do Figma](#figma)
       * [Criando uma aplicação com Vite](#vite)
